@@ -35,7 +35,6 @@ const comments = ["Does it have anything to do with increased services that are 
 ,"Does it have anything to do with increased services that are provided between iPhone users (Facetime, iMessage, etc.).  I get that there are platforms that work for both so maybe it's a way for people to be polarized or people are just lazy and don't want to download additional apps."]
 
 const newComment = "Yeah I'm definitely not a die hard on either side of the spectrum, I just hate that google is now playing the victim only because they realize the disparity between the quality of messaging on iOS and android lol. It's like a get out jail free card for the apple"
-const topN = [];//array of objects.
 let uniqueWords = new Map();
 
 
