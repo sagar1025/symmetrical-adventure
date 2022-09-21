@@ -37,7 +37,7 @@ const comments = ["Does it have anything to do with increased services that are 
 const newComment = "Yeah I'm definitely not a die hard on either side of the spectrum, I just hate that google is now playing the victim only because they realize the disparity between the quality of messaging on iOS and android lol. It's like a get out jail free card for the apple"
 let uniqueWords = new Map();
 
-
+//for existing comments.
 comments.forEach((comment, idx) => {
     const words = comment.split(' ');
     words.forEach((word, idx) => {
@@ -48,6 +48,8 @@ comments.forEach((comment, idx) => {
     });
 });
 
+
+//lets say a new comment comes in. This is how it can be processed.
 newComment.split(' ').forEach((word, idx) => {
     const cleanWord = clean(word);
     if(cleanWord && cleanWord.length > 2) {
@@ -55,6 +57,7 @@ newComment.split(' ').forEach((word, idx) => {
         uniqueWords = mapUniqueWords(uniqueWords, cleanWord);
     }
 });
+
 //sort uniqueWords
 const sorted = new Map([...uniqueWords.entries()].sort((a,b) => b[1] - a[1]));
 console.log(sorted)
