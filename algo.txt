@@ -1,0 +1,16 @@
+1. initially start with first comment.
+2. add all words from first comment into ARR
+2. for each new comment:
+    a. split comment into words.
+    b. check if word is in ARR.
+        c. if it is then update count value of the word in topN.
+        d. if it is not in ARR then add it to the topN and set the value to 1.
+
+
+
+
+Structure of object in ARR should be:
+{
+    "word": string,
+    "count": number
+}
