@@ -10,7 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.1221.0",
-    "dotenv": "^16.0.2",
-    "tiktok-live-connector": "^1.0.1"
+    "dotenv": "^16.0.2"
   }
 }
